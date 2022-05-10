@@ -9,19 +9,41 @@
     <div class="main">
             <div class="navbar">
                 <img class="image_logo" src="/static/images/slogo.png">
-                <nav>
-                    <a href="/login">
-                        <button type="button" class="login">Login/Sign Up</button>
-                    </a>
-                </nav>
             </div>
 
+            <div class="float-container">
+                <div class="float-child1">
+                    <img class="login_pic" src="/static/images/login_page_pic.png">
+                </div>
+
+                <div class="float-child2">
+                    <div class="login_container">
+                        <h1>Login</h1>
+                        <div class="toggle-radio" data-style="rounded" data-color='blue' >
+                            <input type="radio" name="mode" id="mode1" value="mode1">
+                            <label for="mode1" class="doc_ad doc_ad_bt">Doctor</label>
+                            <input type="radio" name="mode" id="mode2" value="mode2">
+                            <label for="mode2" class="doc_ad doc_ad_bt">Admin</label>
+                        </div>
+                        <div>
+                            <label class="login_label margin_left">Username</label>
+                            <input type="text" name="username" class="login_textbox center">
+                            <label class="login_label margin_left">Password</label>
+                            <input type="password" name="username" class="login_textbox center">
+                        </div>
+                        <button type="submit" id="login_button" >Log In</button>
+                        <a href="#" id="forgot_password">Forgot Password?</a>
+                        
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            
+          
     </div>
         
-
-    
-    
-
-     
 
 {% endblock %}
