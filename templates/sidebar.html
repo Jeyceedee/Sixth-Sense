@@ -1,0 +1,60 @@
+{% extends  'layout.html' %}
+
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="main_header">
+        <a class="img_navbar" href="/home">
+            <img class="image_logo" src="/static/images/slogo.png" alt="homepage">
+        </a>
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+
+        <a href="#" class="reg_active">
+            <i class="fa solid fa-plus"></i>
+            <span>Register Patient</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-user"></i>
+            <span>Patients</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-user-md"></i>
+            <span>Doctors</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+
+    </div>
+
+    <div class="frame">
+        <p> Responsive </p>
+        <h2>SIDE BAR</h2>
+        <p>in Pure CSS</p>
+
+    </div>
+
+
+
+
+
+{% endblock %}
