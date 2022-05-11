@@ -1,28 +1,34 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Set UI Components to landing Page */
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-nav{
+nav {
     margin-top: auto;
     margin-bottom: auto;
-    
+
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 5% 0px 5%;
+.image_href {
+    margin-right: auto;
 }
 
-.logo{
-    font-family: 'Poppins';
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 5% 0 5%;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -35,19 +41,57 @@ a{
 }
 
 
-.image_logo{
+.image_logo {
     width: 400px;
     margin-right: auto;
 }
 
-.login{
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F8F9FA;
+}
+
+.content {
+    width: 100%;
+    transform: translateY(-70%);
+}
+
+.content h1 {
+    display: flex;
+    margin: 20% auto 0 auto;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    align-items: center;
+    text-align: center;
+    color: #2F303A;
+}
+
+.content p {
+    margin: 1% auto 0 auto;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.login {
     width: 240px;
     height: 70px;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 3px solid #1762A7;
     border-radius: 5px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -57,66 +101,27 @@ a{
     text-align: center;
     justify-content: center;
     color: #1762A7;
-    
+
 }
 
-.main{
-    width:100%;
-    height: 100vh;
-    position: relative;
-    background-color: #F8F9FA;
-}
-
-.content{
-    width: 100%;
-    transform: translateY(-70%);
-}
-
-.content h1{
-    display: flex;
-    margin: 20% auto 0 auto;
-    width: 50%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 96px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #2F303A;
-}
-
-.content p{
-    margin: 1% auto 0 auto;
-    width: 50%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-}
-
-.btn button{
+.btn button {
 
     box-sizing: border-box;
     position: absolute;
     width: 272px;
     height: 66px;
-    
+
 
     background: #1762A7;
     border: 1px solid rgba(47, 48, 58, 0.4);
     border-radius: 15px;
 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    
+
 
     align-items: center;
     justify-content: center;
@@ -130,37 +135,36 @@ a{
 
 /* LOGIN HTML*/
 
-.float-container{
-    padding: 20px;
+.float-container {
+    padding: 10px;
     display: flex;
-    text-align:center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    
-    
-    
-    
+
+
 }
 
-.float-child1{
+.float-child1 {
     flex: 2;
 }
 
-.float-child2{
+.float-child2 {
     flex: 1;
 }
 
-.flex-child:first-child{
+.flex-child:first-child {
     margin-right: 20px;
 }
 
-.login_pic{
+.login_pic {
     height: 477px;
     position: relative;
     background-color: #FFFFFF;
+    margin-bottom: 60px;
 }
 
-.login_container{
+.login_container {
     margin-right: 162px;
     box-sizing: border-box;
     position: relative;
@@ -172,15 +176,15 @@ a{
     text-align: center;
 }
 
-.margin_left{
+.margin_left {
     margin: 0px 0px 0px 60px;
 }
 
-.center{
+.center {
     margin: 0 auto;
 }
 
-.login_container h1{
+.login_container h1 {
     margin: 94px 0px 20px 60px;
     font-weight: 700;
     font-size: 36px;
@@ -190,16 +194,16 @@ a{
     color: #2F303A;
 }
 
-input, label, a{
+input, label, a {
     display: block;
     font-style: normal;
     padding: 10px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-.doc_ad{
+.doc_ad {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -209,14 +213,14 @@ input, label, a{
     color: #2F303A;
 }
 
-.doc_ad_bt{
+.doc_ad_bt {
     width: 202px;
     height: 53px;
-    
+
 }
 
-.login_label{
-    font-family: 'Poppins';
+.login_label {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -227,7 +231,7 @@ input, label, a{
     color: rgba(47, 48, 58, 0.6);
 }
 
-.login_textbox{
+.login_textbox {
     width: 401px;
     height: 53px;
     background: #FFFFFF;
@@ -237,7 +241,7 @@ input, label, a{
     padding: 20px;
 }
 
-#login_button{
+#login_button {
     margin-top: 30px;
     box-sizing: border-box;
     width: 401px;
@@ -250,12 +254,12 @@ input, label, a{
     font-size: 24px;
     line-height: 36px;
     color: #FFFFFF;
-    
-    
+
+
 }
 
-#forgot_password{
-    font-family: 'Poppins';
+#forgot_password {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -266,18 +270,17 @@ input, label, a{
 }
 
 
-
-footer{
+footer {
     position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
-    bottom:0;
+    bottom: 0;
 }
 
-footer img{
+footer img {
     width: 100vw;
-    bottom:0;
+    bottom: 0;
 }
 
 
@@ -424,3 +427,215 @@ footer img{
     top: 386px;
 }
 */
+/* Style Properties of Header Bar */
+
+.main_header {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    top: 0px;
+    background: #FFFFFF;
+    z-index: 3;
+
+}
+
+.main_header .img_navbar {
+    padding-top: 7px;
+    padding-left: 30px;
+}
+
+.main_header .img_navbar img {
+    height: 113px;
+    width: auto;
+}
+
+/* Style Properties of Sidebar */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+
+.sidebar {
+    position: fixed;
+    width: 348px;
+    left: -348px;
+    height: 100%;
+    background-color: #1762A7;
+    transition: all .5s ease;
+    padding-top: 200px;
+    z-index: 2;
+
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 260px;
+    color: white;
+    padding-left: 30px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border-left: 5px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s ease;
+}
+
+a.active, a:hover {
+    color: #fff;
+    background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+}
+
+.sidebar a i {
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.sidebar a span {
+    letter-spacing: 1px;
+
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 30px;
+    font-size: 29px;
+    background-color: #1762A7;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, .1),
+    4px 4px 20px 0px rgba(0, 0, 0, .1),
+    2px 2px 5px 0px rgba(0, 0, 0, .1);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    line-height: 45px;
+    transition: all .5s ease;
+    z-index: 4;
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 860px) {
+    .sidebar {
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px 0;
+    }
+
+    header, #btn, #cancel {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        margin-left: 23px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar a {
+        height: 60px;
+    }
+
+    .sidebar a i {
+        margin-left: -10px;
+    }
+
+    a:hover {
+        width: 200px;
+        background: inherit;
+    }
+
+    .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.sidebar > a.active, .sidebar > a:hover:nth-child(even) {
+    --accent-color: #51ABDC;
+    --gradient-color: #51ABDC;
+}
+
+.sidebar a.active, .sidebar > a:hover:nth-child(odd) {
+    --accent-color: #51ABDC;
+    --gradient-color: #51ABDC;
+}
+
+.reg_active {
+    background-color: white;
+}
+
+a.reg_active {
+    color: black;
+}
+
+
+.frame {
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
