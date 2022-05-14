@@ -6,6 +6,7 @@
 
 {% block body %}
 
+
     <div class="main_header">
         <a class="img_navbar" href="/home">
             <img class="image_logo" src="/static/images/slogo.png" alt="homepage">
@@ -19,19 +20,19 @@
     </label>
     <div class="sidebar">
 
-        <a href="#" class="reg_active">
+        <a href="/patientRegistration" target="demo" class="reg_active">
             <i class="fa solid fa-plus"></i>
             <span>Register Patient</span>
         </a>
-        <a href="#">
+        <a href="/admindashboard" target="demo">
             <i class="fas fa-home"></i>
             <span>Dashboard</span>
         </a>
-        <a href="#">
+        <a href="/patientList" target="demo">
             <i class="fas fa-user"></i>
             <span>Patients</span>
         </a>
-        <a href="#">
+        <a href="/login" target="demo">
             <i class="fas fa-user-md"></i>
             <span>Doctors</span>
         </a>
@@ -47,10 +48,7 @@
     </div>
 
     <div class="frame">
-        <p> Responsive </p>
-        <h2>SIDE BAR</h2>
-        <p>in Pure CSS</p>
-
+        <embed name="demo" class="content_frame" type="text/html" src="{{ url_for('adminDashboard') }}">
     </div>
 
 
