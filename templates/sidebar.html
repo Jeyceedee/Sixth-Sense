@@ -6,12 +6,13 @@
 
 {% block body %}
 
-
     <div class="main_header">
         <a class="img_navbar" href="/home">
             <img class="image_logo" src="/static/images/slogo.png" alt="homepage">
         </a>
     </div>
+
+    <body class="sidebar_body">
 
     <input type="checkbox" id="check">
     <label for="check">
@@ -50,8 +51,7 @@
     <div class="frame">
         <embed name="demo" class="content_frame" type="text/html" src="{{ url_for('adminDashboard') }}">
     </div>
-
-
+    </body>
 
 
 
