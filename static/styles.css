@@ -197,10 +197,13 @@ a {
 input, label, a {
     display: block;
     font-style: normal;
-    padding: 10px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.float-container label {
+    padding: 10px;
 }
 
 .doc_ad {
@@ -437,6 +440,7 @@ footer img {
     top: 0px;
     background: #FFFFFF;
     z-index: 3;
+    border-bottom: 2px solid whitesmoke;
 
 }
 
@@ -667,11 +671,8 @@ p {
 .txt_container {
     padding-top: 180px;
     padding-left: 400px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: inline-block;
+    position: relative;
 }
 
 .txt_container p {
@@ -787,3 +788,56 @@ p {
     font-size: 96px;
     line-height: 144px
 }
+
+/* Patient Registration Form*/
+
+.container_form {
+    display: inline-block;
+    position: relative;
+    width: 1747px;
+    height: 928px;
+    padding-left: 398px;
+    padding-top: 123px;
+
+}
+
+.container_form h1 {
+    padding-top: 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    width: 467px;
+    height: 101px;
+}
+
+.container_form h5 {
+    padding-top: 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.container_form p {
+    padding-top: 45px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.container_form button {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.container_form .form-label{
+    font-style: italic;
+}
+
+
+
