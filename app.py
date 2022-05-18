@@ -30,9 +30,13 @@ def adminDashboard():
 def patientRegistration():
     return render_template('patientRegistration.html')
 
-@app.route("/patientList")
-def patientList():
-    return render_template('patientList.html')
+@app.route("/adminPatient")
+def adminPatient():
+    return render_template('adminPatient.html')
+
+@app.route("/patientStatus")
+def patientStatus():
+    return render_template('patientStatus.html')
 
 
 if __name__ == "__main__":

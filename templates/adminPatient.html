@@ -1,0 +1,168 @@
+{% extends  'layout.html' %}
+{% include  'bootstrapLayout.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div class="container_adminPatient">
+
+        <div class="row">
+            <div class="col">
+                <h1>List of Patients</h1>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-3">
+                <div class="input-group">
+                    <input class="form-control border-end-0 border rounded-pill" type="search" value="search"
+                           id="example-search-input">
+                    <span class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5"
+                            type="button">
+                        <i class="fa fa-search "></i>
+                    </button>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <table class="table table-hover">
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Patient Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Contact No.</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Percival Riego</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>1234 San Roque St. Brgy. Milagrosa Makati City</td>
+                    <td>+639198051426</td>
+                    <td>View Status</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row-cols-3 align-items-center justify-content-end pt-4">
+            <div class="col-md-1">
+                <p>Showing 1 to 11 of 11 entries</p>
+            </div>
+            <div class="col-auto">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-auto">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                    <option selected>3/page</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
