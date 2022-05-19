@@ -34,9 +34,13 @@ def patientRegistration():
 def adminPatient():
     return render_template('adminPatient.html')
 
-@app.route("/patientStatus")
-def patientStatus():
-    return render_template('patientStatus.html')
+@app.route("/patient_statusEdit")
+def patient_statusEdit():
+    return render_template('patient_statusEdit.html')
+
+@app.route("/patient_statusView")
+def patient_statusView():
+    return render_template('patient_statusView.html')
 
 
 if __name__ == "__main__":

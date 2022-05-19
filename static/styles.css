@@ -876,9 +876,35 @@ p {
     color: #5A4181;
 }
 
-.container_adminPatient select{
+.container_adminPatient a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+.container_adminPatient select {
     margin-bottom: 17px;
 }
 
 /* Patient Status Form */
 
+.container_statusForm {
+    display: inline-block;
+    position: relative;
+    width: 1800px;
+    height: 928px;
+    padding-left: 398px;
+    padding-top: 123px;
+    background-color: #FFFFFF;
+}
+
+.container_statusForm button {
+    border: 1px solid #C6C6C6;
+}
+
+.container_statusForm label {
+    font-weight: 500;
+}
+
+#patient_header {
+    background-color: #F2F2F2;
+}
