@@ -475,7 +475,7 @@ footer img {
 .sidebar {
     position: fixed;
     width: 348px;
-    left: -348px;
+    left: 0px;
     height: 100%;
     background-color: #1762A7;
     transition: all .5s ease;
@@ -549,7 +549,7 @@ label #cancel {
 }
 
 #check:checked ~ .sidebar {
-    left: 0;
+    left: -348px;
 }
 
 #check:checked ~ label #btn {
@@ -794,10 +794,11 @@ p {
 .container_form {
     display: inline-block;
     position: relative;
-    width: 1747px;
+    width: 1800px;
     height: 928px;
     padding-left: 398px;
     padding-top: 123px;
+    background-color: #FFFFFF;
 
 }
 
@@ -820,7 +821,6 @@ p {
 
 .container_form p {
     padding-top: 45px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -835,9 +835,76 @@ p {
     line-height: 36px;
 }
 
-.container_form .form-label{
+.container_form .form-label {
     font-style: italic;
+    padding-top: 20px;
 }
 
+/* Admin Patient Form */
 
+.ms-n5 {
+    margin-left: -40px;
+}
 
+.container_adminPatient {
+    display: inline-block;
+    position: relative;
+    width: 1880px;
+    height: 928px;
+    padding-left: 398px;
+    padding-top: 123px;
+}
+
+.container_adminPatient h1 {
+    padding-top: 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    width: 467px;
+    height: 101px;
+}
+
+.container_adminPatient p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+}
+
+.pagination > li > a {
+    background-color: white;
+    color: #5A4181;
+}
+
+.container_adminPatient a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+.container_adminPatient select {
+    margin-bottom: 17px;
+}
+
+/* Patient Status Form */
+
+.container_statusForm {
+    display: inline-block;
+    position: relative;
+    width: 1800px;
+    height: 928px;
+    padding-left: 398px;
+    padding-top: 123px;
+    background-color: #FFFFFF;
+}
+
+.container_statusForm button {
+    border: 1px solid #C6C6C6;
+}
+
+.container_statusForm label {
+    font-weight: 500;
+}
+
+#patient_header {
+    background-color: #F2F2F2;
+}

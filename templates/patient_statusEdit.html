@@ -1,0 +1,93 @@
+{% extends  'layout.html' %}
+{% include  'bootstrapLayout.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div class="container_statusForm">
+        <div class="row mt-2" id="patient_header">
+            <div class="col">
+                <h1>Patient Status</h1>
+            </div>
+        </div>
+        <div class="row align-items-center pt-4">
+            <img src="/static/images/profile_placeholder.png" class="rounded-circle" style="width: 8%; height: 8%;">
+            <div class="col">
+                <h4>Kaori Miyazono</h4>
+                <h6>Male</h6>
+                <h6>14 Years Old</h6>
+            </div>
+            <div class="col-md-1 offset-md-3">
+
+                <a class="btn btn-primary-outline" type="submit">Edit
+                    <i class="far fa-edit"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-md-center pt-5">
+            <div class="col">
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox1" class="col-sm-2 col-form-label">Height: </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox1">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox2" class="col-sm-2 col-form-label">Weight: </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox2">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox3" class="col-sm-2 col-form-label">Glucose Level: </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox3">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox4" class="col-sm-2 col-form-label">Blood Pressure: </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox4">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox5" class="col-sm-2 col-form-label">Clinical History: </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox5">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox6" class="col-sm-2 col-form-label">Doctor: </label>
+                    <div class="col-sm-6">
+                        <select class="form-select" aria-label="Default select example" id="inputBox6">
+                            <option value="" selected disabled hidden>Assign to</option>
+                            <option value="1">Ramil S Cobilla</option>
+                            <option value="2">Jhon Carlo Dichoso</option>
+                            <option value="3">April Kate Pascual</option>
+                            <option value="4">Alexandre Miñon</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-md-center">
+                    <label for="inputBox7" class="col-sm-2 col-form-label"><strong>Result of MRI:</strong> </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputBox7">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-4 row align-items-center mt-5">
+                <div class="col offset-md-9">
+                    <button class="btn btn-primary me-md-2 col-5 mx-auto" type="submit">Save</button>
+                    <button class="btn btn-primary-outline" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
