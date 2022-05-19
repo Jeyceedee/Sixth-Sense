@@ -33,15 +33,15 @@
             <i class="fas fa-user"></i>
             <span>Patients</span>
         </a>
-        <a href="/patient_statusView" target="demo">
+        <a href="/doctorList" target="demo">
             <i class="fas fa-user-md"></i>
             <span>Doctors</span>
         </a>
-        <a href="#">
+        <a href="/adminSettings" target="demo">
             <i class="fas fa-cog"></i>
             <span>Settings</span>
         </a>
-        <a href="#">
+        <a href="/home">
             <i class="fas fa-sign-out-alt"></i>
             <span>Logout</span>
         </a>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="frame">
-        <embed name="demo" class="content_frame" type="text/html" src="{{ url_for('patient_statusView') }}">
+        <embed name="demo" class="content_frame" type="text/html" src="{{ url_for('adminDashboard') }}">
     </div>
     </body>
 

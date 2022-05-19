@@ -42,6 +42,16 @@ def patient_statusEdit():
 def patient_statusView():
     return render_template('patient_statusView.html')
 
+@app.route("/adminSettings")
+def adminSettings():
+    return render_template('adminSettings.html')
+
+@app.route("/doctorList")
+def doctorList():
+    return render_template('doctorsList.html')
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
