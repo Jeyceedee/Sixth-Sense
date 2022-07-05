@@ -1,0 +1,46 @@
+{% extends  'layout.html' %}
+{% include  'bootstrapLayout.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div class="container_statusForm">
+        <div class="row mt-2" id="patient_header">
+            <div class="col">
+                <h1>Patient Status</h1>
+            </div>
+        </div>
+        <div class="userPhoto">
+            <i class="fas fa-user-circle fa-7x"></i>
+        </div>
+        <div class="patientStatus">
+            <h3 class="patientField">Patient Name: <p class="patientAtt">Percival Riego</p></h3>
+            <h3 class="patientField">Age: <p class="patientAtt">33 years old</p></h3>
+            <h3 class="patientField">Clinical History:</h3>
+            <p class="patientAtt1">Intermittent, positional headaches</p> 
+        </div>
+        <div>
+            <form action="/classification" method="post" enctype='multipart/form-data'>
+                <label class="custom-file-upload">
+                    <input type="file" name="file"/>
+                    Upload MRI Image
+                </label>
+                <button type= "submit" class="seeResult">See Result</button>
+            </form>
+        </div>
+
+        <div>
+            <h3 class="typeBT">Type of Brain Tumor</h3>
+        </div>
+    </div>
+    <div>
+        <h3 class="result">Result</h3>
+        <div>
+            <img class="imgResult" src="{{url_for('static',filename=img)}}" alt="MRI Image">
+        </div>
+        <h3 class="typeBT">Type of Brain Tumor</h3>
+        <p class="tumorResult">The Model predicts that it is a {{p}}</p>
+    </div>
+    
+{% endblock %}

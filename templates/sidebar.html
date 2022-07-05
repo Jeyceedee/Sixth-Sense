@@ -33,6 +33,10 @@
             <i class="fas fa-user"></i>
             <span>Patients</span>
         </a>
+        <a href="/classification" target="demo">
+            <i class="fas fa-user"></i>
+            <span>Classify Brain Tumor</span>
+        </a>
         <a href="/doctorList" target="demo">
             <i class="fas fa-user-md"></i>
             <span>Doctors</span>
@@ -47,12 +51,9 @@
         </a>
 
     </div>
-
     <div class="frame">
         <embed name="demo" class="content_frame" type="text/html" src="{{ url_for('adminDashboard') }}">
     </div>
     </body>
-
-
 
 {% endblock %}

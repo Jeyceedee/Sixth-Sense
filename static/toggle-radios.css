@@ -117,3 +117,4 @@ CORE STYLES ABOVE - NO TOUCHY
 	.toggle-radio[data-style='rounded'] > input:first-of-type + label {border-radius:200px 0 0 200px;}
 	.toggle-radio[data-style='rounded'] > input:last-of-type + label {border-radius:0 200px 200px 0;}
 }
+

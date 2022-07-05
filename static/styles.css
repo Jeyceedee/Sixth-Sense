@@ -59,7 +59,6 @@ a {
 }
 
 .content h1 {
-    display: flex;
     margin: 20% auto 0 auto;
     width: 50%;
     font-family: 'Poppins', sans-serif;
@@ -923,4 +922,176 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+}
+
+
+/* Classification Form */
+
+.typeBT {
+    position: absolute;
+    width: 254px;
+    height: 36px;
+    left: 1210px;
+    top: 794px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #2F303A;
+}
+
+.uploadMRI{
+
+    
+}
+
+.seeResult{
+
+    background: #1762A7;
+    border-radius: 5px;
+    position: absolute;
+    width: 251px;
+    height: 50px;
+    left: 525px;
+    top: 853px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    width: 251px;
+    height: 45px;
+    left: 525px;
+    top: 784px;
+    text-align: center;
+    background: #F8F9FA;
+    border: 2px solid #C6C6C6;
+}
+
+/* Result*/
+
+.imgResult{
+    position: absolute;
+    height: 370px;
+    left: 1210px;
+    top: 370px;
+
+}
+
+.result{
+    position: absolute;
+    width: 103px;
+    height: 48px;
+    left: 1210px;
+    top: 316px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    color: #2F303A;
+}
+
+.tumorResult{
+    position: absolute;
+    height: 39px;
+    left: 1210px;
+    top: 852px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+
+    border: 2px solid #51ABDC;
+    background-color: #51ABDC;
+    padding: 5px;
+}
+
+.patientStatus{
+    position: absolute;
+    width: 400px;
+    height: 40.41px;
+    left: 487px;
+    top: 400px;
+}
+
+.patientAtt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #2F303A;
+    padding-left: 15px;
+}
+.patientAtt1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #2F303A;
+}
+.patientField{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    padding:5px 8px 10px 0px;
+    color: #2F303A;
+}
+
+.userPhoto{
+    position: absolute;
+    height: 400px;
+    left: 590px;
+    top: 270px;
 }
